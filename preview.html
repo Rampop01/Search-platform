@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Preview page</title>
+  </head>
+  <body>
+
+    <div class="container w-full min-h-screen p-[10px]">
+        <div
+          class="todo w-full max-w-[540px] bg-white mx-auto my-20 p-10 rounded-lg shadow-inner shadow-green"
+        >
+          <h2
+            class="text-green-900 flex items-center mb-[20px] text-[30px] italic"
+          >
+            Todoer<img src="/images/checked.png" alt="" class="w-[20px]" />
+            <img
+              src="/images/todo image.png"
+              alt="to-do image"
+              class="w-[80px] ml-[270px]"
+            />
+          </h2>
+    
+
+    <section id="previewPage"></section>
+
+   <button
+              onclick="toMainPage(uuid)"
+              class="border-0 outline-none py-[16px] px-[50px] bg-[#023f02] text-[16px] text-white rounded-[40px]"
+            >
+              Back to task
+            </button>
+  </body>
+
+  <script src="preview.js"></script>
+  <script src="script.js"></script>
+</html>

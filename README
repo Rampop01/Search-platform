@@ -1,0 +1,8 @@
+This is a simple To-do application done for Web3Bridge pre- qualification Excercise
+the input box takes takes the task to be achieved, any achievedtask can be checked
+there is a delete icon to remove any task that needed to e removed
+the input box takes the new rask and append it in the list of to-do
+there is uiid to notify user if their is an existing task as the in one when user click on add button
+their is a pge for each task descripton
+user can edit previous task
+there is a model to notify user for any action they take I.E CRUD

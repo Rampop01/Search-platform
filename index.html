@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T0-DO List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container w-full min-h-screen bg-[#023f02] p-[10px]">
+        <div
+          class="todo w-full max-w-[540px] bg-white mx-auto my-20 p-10 rounded-lg shadow-inner shadow-green"
+        >
+          <h2
+            class="text-green-900 flex items-center mb-[20px] text-[30px] italic"
+          >
+            Todoer<img src="/images/checked.png" alt="" class="w-[20px]" />
+            <img
+              src="/images/todo image.png"
+              alt="to-do image"
+              class="w-[80px] ml-[270px]"
+            />
+          </h2>
+          <div
+            class="input-button flex items-center justify-between bg-[#e1d8d8] rounded-[30px] pl-5 mb-5"
+          >
+            <input
+              class="font-semibold p-[10px] bg-[transparent] border-0 flex-1 outline-none focus:bg-white focus: rounded-[30px]"
+              type="text"
+              id="input-box"
+              placeholder="what will you do today"
+            />
+            <button
+              onclick="addTask()"
+              class="border-0 outline-none py-[16px] px-[50px] bg-[#023f02] text-[16px] text-white rounded-[40px]"
+            >
+              Add Task
+            </button>
+          </div>
+          <span class="hidden flex flex-center" id="errorMessage"></span>
+          <ul id="task-list" class="flex flex-col gap-6">
+            <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>  -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
